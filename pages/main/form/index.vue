@@ -12,15 +12,18 @@
 						<view class="tips">与人工智能对话</view>
 					</view>
 					<view class="textarea">
-						<u--textarea height="140" placeholder="支持长按粘贴您的问题"></u--textarea>
+						<u--textarea v-model="question" height="140" placeholder="支持长按粘贴您的问题"></u--textarea>
 					</view>
 					<view class="btn-group">
 						<view class="btn paste">
 							<u-button icon="file-text" text="粘贴问题"></u-button>
 						</view>
 						<view class="btn get">
-							<u-button @click="videoAdClick" iconColor="#ffffff" color="#26B3A0" icon="edit-pen" text="获取问题答案"></u-button>
+							<u-button @click="example" iconColor="#ffffff" color="#26B3A0" icon="edit-pen" text="获取问题答案"></u-button>
 						</view>
+					</view>
+					<view class="btn-group" >
+						<view class="title" v-text="answer"></view>
 					</view>
 				</view>
 			</u-transition>
@@ -101,13 +104,18 @@
 </template>
 
 <script>
+	// import fs from 'fs';
+	// import { ChatGPTAPI } from '../../../node_modules/chatgpt/build/index.js'
+	// import ChatGPTAPI from 'chatgpt'
+	// import { ChatGPTClient } from '@waylaidwanderer/chatgpt-api';
 	let videoAd = null;
 	// 在页面中定义插屏广告
 	let interstitialAd = null
 	export default {
 		data() {
 			return {
-
+				question:'',
+				answer:''
 			};
 		},
 		async onLoad() {
@@ -211,6 +219,27 @@
 					  console.log('关闭')
 				  })
 				}
+			},
+			async example() {
+				uni.showLoading({
+				  title: '加载中'
+				});
+				const { Configuration, OpenAIApi } = require("openai");
+				const configuration = new Configuration({
+				  apiKey: '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',
+				});
+				const openai = new OpenAIApi(configuration);
+				const response = await openai.createCompletion({
+				  model: "text-davinci-003",
+				  prompt: this.question,
+				  // temperature: 0,
+				  // max_tokens: 7,
+				});
+				console.log(response.data);
+				if(response.data && response.data.choices){
+					this.answer=response.data.choices[0].text;
+				}
+				uni.hideLoading();
 			},
 		}
 	}
