@@ -1,0 +1,80 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/main/index/index",
+			"style": {
+				"navigationBarTitleText": "ChatGPT专业版",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/main/ask/index",
+			"style": {
+				"navigationBarTitleText": "ChatGPT问答收录",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/main/form/index",
+			"style": {
+				"navigationBarTitleText": "ChatGPT专业版",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/main/answer/index",
+			"style": {
+				"navigationBarTitleText": "ChatGPT专业版",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#26B3A0",
+				"navigationBarTextStyle": "white"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#26B3A0",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/main/index/index",
+			"iconPath": "static/tabbar/home_blue2.png",
+			"selectedIconPath": "static/tabbar/home_blue3_selected.png",
+			"text": "首页"
+		},
+		{
+			"pagePath": "pages/main/form/index",
+			"iconPath": "static/tabbar/all_blue2.png",
+			"selectedIconPath": "static/tabbar/all_blue2_selected.png",
+			"text": "对答"
+		},
+		{
+			"pagePath": "pages/main/ask/index",
+			"iconPath": "static/tabbar/all_blue2.png",
+			"selectedIconPath": "static/tabbar/all_blue2_selected.png",
+			"text": "问答"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "ChatGPT专业版",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"uniIdRouter": {},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

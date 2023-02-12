@@ -1,0 +1,23 @@
+{
+    "devDependencies": {
+        "sass": "^1.56.2",
+        "sass-loader": "^10.4.1"
+    },
+    "dependencies": {
+        "uview-ui": "^2.0.31"
+    },
+    "id": "OpenAI-ChatGPT",
+    "name": "火爆全网的OpenAI ChatGPT 智能AI工具ChatGPT免费注册体验",
+    "displayName": "火爆全网的OpenAI ChatGPT 智能AI工具ChatGPT免费注册体验",
+    "version": "1.0.0",
+    "description": "OpenAI ChatGPT 人工智能AI工具ChatGPT免费注册体验，AI绘画、智能对话、智能问答、聊天机器人、文案、编程等等",
+    "keywords": [
+        "OpenAI，ChatGPT"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "uni-app前端项目模板"
+        ]
+    }
+}
