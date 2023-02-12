@@ -16,7 +16,7 @@
 			</view> -->
 			<view class="btn-group">
 				<view class="btn" v-on:click="onToForm">
-					<u-button shape="circle" iconColor="#ffffff" color="#26B3A0" icon="edit-pen" text="免费注册体验">
+					<u-button shape="circle" iconColor="#ffffff" color="#26B3A0" icon="edit-pen" text="免费体验">
 					</u-button>
 				</view>
 				<!-- <view class="tips">
@@ -30,10 +30,10 @@
 					<u-button open-type="share" shape="circle" color="#26B3A0" :plain="true" icon="share" text="推荐给朋友"></u-button>
 				</view>
 			</view>
-			<view class="desc-box">
+			<!-- <view class="desc-box">
 				<view class="title">如何注册并且开启ChatGPT</view>
 				<view class="cont">chatGPT 是一种使用GPT-3 模型训练的对话机器人。GPT-3 是 OpenAl 公司开发的一种语言生成模型，通过大量训练文本数据，它可以通过模仿人类语言来生成语言。chatGPT 可以使用这一技术来进行自然语言对话，回答用户的问题，或者进行自然语言文本生成任务。</view>
-				<!-- <ad unit-id="adunit-eacac3d02a9631ba" ad-type="video" ad-theme="white"></ad> -->
+				<ad unit-id="adunit-eacac3d02a9631ba" ad-type="video" ad-theme="white"></ad>
 				<view class="sub-title">1.官方网站 http://openai.com</view>
 				<view class="sub-title">2.openai接口文档</view>
 				<view class="sub-cont">https://beta.openai.com/docs/api-reference/introduction</view>
@@ -41,8 +41,8 @@
 				<view class="sub-cont">https://github.com/fuergaosi233/wechat-chatgpt</view>
 				<view class="sub-title">4.chatGPT镜像网站</view>
 				<view class="sub-cont">https://gpt.chatapi.art/</view>
-				<!-- <ad-custom unit-id="adunit-debc1c1f6bfaf529"></ad-custom> -->
-			</view>
+				<ad-custom unit-id="adunit-debc1c1f6bfaf529"></ad-custom>
+			</view> -->
 		</view>
 	</view>
 </template>
