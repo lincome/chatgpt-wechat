@@ -4,14 +4,11 @@
         "sass-loader": "^10.4.1"
     },
     "dependencies": {
-        "axios": "^1.3.2",
-        "chatgpt": "^4.2.0",
-        "openai": "^3.1.0",
         "uview-ui": "^2.0.31"
     },
     "id": "OpenAI-ChatGPT",
-    "name": "火爆全网的OpenAI ChatGPT 智能AI工具ChatGPT免费注册体验",
-    "displayName": "火爆全网的OpenAI ChatGPT 智能AI工具ChatGPT免费注册体验",
+    "name": "智能AI工具ChatGPT免费注册体验",
+    "displayName": "智能AI工具ChatGPT免费注册体验",
     "version": "1.0.0",
     "description": "OpenAI ChatGPT 人工智能AI工具ChatGPT免费注册体验，AI绘画、智能对话、智能问答、聊天机器人、文案、编程等等",
     "keywords": [

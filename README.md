@@ -14,9 +14,3 @@ https://github.com/fuergaosi233/wechat-chatgpt
 
 4.chatGPT镜像网站
 https://gpt.chatapi.art
-		
-
-# 扫码体验小程序
-
-![Image text](https://mp-af11017e-5df3-4e30-b738-79ecd9ed412b.cdn.bspapp.com/cloudstorage/93fcc3f0-71db-4755-a7a7-e7e3475dda37.png)
-
